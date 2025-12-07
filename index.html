@@ -45,41 +45,55 @@
 
     <!-- Main Container --><div id="app" class="min-h-screen">
         
-        <!-- Sticky Navigation Bar (Light Theme) --><header class="sticky top-0 bg-white border-b border-gray-200 shadow-lg z-10">
-            <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
-                <div class="flex justify-between items-center h-16">
-                    <h1 class="text-2xl font-extrabold text-blue-700">9CT Task 4: Python Assessment</h1>
-                    <div class="flex space-x-4 md:space-x-8 text-sm md:text-base">
-                        <button onclick="showPage('page-overview')" id="nav-page-overview" class="p-2 transition duration-150 ease-in-out hover:text-blue-700 text-gray-700">Overview</button>
-                        <button onclick="showPage('page-phase1')" id="nav-page-phase1" class="p-2 transition duration-150 ease-in-out hover:text-blue-700 text-gray-700">Phase 1</button>
-                        <button onclick="showPage('page-phase2')" id="nav-page-phase2" class="p-2 transition duration-150 ease-in-out hover:text-blue-700 text-gray-700">Phase 2</button>
-                        <button onclick="showPage('page-phase3')" id="nav-page-phase3" class="p-2 transition duration-150 ease-in-out hover:text-blue-700 text-gray-700">Phase 3</button>
-                        <button onclick="showPage('page-submit')" id="nav-page-submit" class="p-2 transition duration-150 ease-in-out hover:text-blue-700 text-gray-700">How to Submit</button>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <!-- Sticky Navigation Bar (Light Theme) -->
+         <header class="sticky top-0 z-50 bg-gray-100 border-b border-gray-300 shadow-md">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <div class="flex justify-between items-center h-16">
+      <h1 class="text-2xl font-extrabold text-blue-800">9CT Task 4: Python Assessment</h1>
+      <div class="flex space-x-4 md:space-x-8 text-sm md:text-base font-semibold text-gray-800">
+        <button onclick="showPage('page-overview')" id="nav-page-overview"
+          class="p-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Overview</button>
+        <button onclick="showPage('page-phase1')" id="nav-page-phase1"
+          class="p-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Phase 1</button>
+        <button onclick="showPage('page-phase2')" id="nav-page-phase2"
+          class="p-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Phase 2</button>
+        <button onclick="showPage('page-phase3')" id="nav-page-phase3"
+          class="p-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">Phase 3</button>
+        <button onclick="showPage('page-submit')" id="nav-page-submit"
+          class="p-2 hover:text-blue-700 focus:text-blue-700 focus:outline-none">How to Submit</button>
+      </div>
+    </div>
+  </nav>
+</header>
 
-        <!-- Page-wide Banner --><div class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 sm:py-20 lg:py-24 overflow-hidden">
-            <div class="absolute inset-0 z-0 opacity-20">
-                <!-- Background pattern SVG --><svg class="absolute inset-0 h-full w-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
-                    <defs>
-                        <pattern id="pattern-hexagons" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-                            <path d="M5 0L10 3.333V6.667L5 10L0 6.667V3.333L5 0Z" fill="white" fill-opacity="0.1"></path>
-                        </pattern>
-                    </defs>
-                    <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-hexagons)"></rect>
-                </svg>
-            </div>
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">
-                    Unleash Your Python Prowess
-                </h2>
-                <p class="text-lg sm:text-xl lg:text-2xl font-light opacity-90 max-w-3xl mx-auto">
-                    Dive into reverse engineering, build powerful encryption tools, and craft your own game.
-                </p>
-            </div>
-        </div>
+        <!-- Page-wide Banner -->
+    <div class="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16 sm:py-20 lg:py-24 overflow-hidden">
+    <!-- Solid grey base layer to prevent transparency -->
+    <div class="absolute inset-0 bg-gray-800 z-0"></div>
+
+    <!-- Subtle pattern overlay -->
+    <div class="absolute inset-0 z-10 opacity-15">
+        <svg class="absolute inset-0 h-full w-full" fill="none" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+        <defs>
+            <pattern id="pattern-hexagons" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
+            <path d="M5 0L10 3.333V6.667L5 10L0 6.667V3.333L5 0Z" fill="white" fill-opacity="0.1"></path>
+            </pattern>
+        </defs>
+        <rect x="0" y="0" width="100%" height="100%" fill="url(#pattern-hexagons)"></rect>
+        </svg>
+    </div>
+
+    <!-- Main text content -->
+    <div class="relative z-20 text-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight mb-4">
+        Unleash Your Python Prowess
+        </h2>
+        <p class="text-lg sm:text-xl lg:text-2xl font-light opacity-95 max-w-3xl mx-auto">
+        Dive into reverse engineering, build powerful encryption tools, and craft your own game.
+        </p>
+    </div>
+    </div>
+
 
         <!-- Main Content Area --><main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             
