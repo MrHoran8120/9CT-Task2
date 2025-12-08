@@ -97,7 +97,8 @@
 
         <!-- Main Content Area --><main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
             
-            <!-- PAGE 1: OVERVIEW --><div id="page-overview" class="page">
+            <!-- PAGE 1: OVERVIEW -->
+                
                 <div class="section-box">
                     <h2 class="text-3xl font-bold mb-4 text-blue-700">Assessment Task 4: The Python Challenge</h2>
                     <p class="text-xl mb-6 font-medium text-gray-600">Year 9 Computing Technology // Python Programming</p>
@@ -144,6 +145,26 @@
                         <li>Functions</li>
                         <li>Commenting and code readability</li>
                     </ul>
+                    <!-- Helpful Resources -->
+                    <div class="mt-10 border-t border-gray-200 pt-6">
+                    <h3 class="text-2xl font-bold mb-3 text-blue-700">Helpful Resources</h3>
+                    <p class="text-gray-700 mb-3">
+                        Before beginning your programming task, make sure you review the recommended reference materials.  
+                        These pages provide examples and advice to help you write structured, readable, and high-quality code.
+                    </p>
+                    <ul class="list-disc list-inside space-y-1 text-gray-700 ml-4">
+                        <li>
+                        <a href="./terminalMenu.html" class="text-blue-700 underline hover:text-blue-900">
+                            Understanding Terminal Menu Programs
+                        </a>
+                        </li>
+                        <li>
+                        <a href="./goodCodingTips.html" class="text-blue-700 underline hover:text-blue-900">
+                            Good Coding Tips
+                        </a>
+                        </li>
+                    </ul>
+                    </div>   
                     </div>
                     <!-- Marks and Weighting Section -->
                         <div class="mt-10 border-t border-gray-200 pt-6">
@@ -164,39 +185,87 @@
                 </div>
                 </div>
                 
+            <!-- PAGE 2: PHASE 1 - REVERSE ENGINEERING -->
+            <!-- PAGE 2: PHASE 1 - REVERSE ENGINEERING -->
+                <div id="page-phase1" class="page">
+  <div class="section-box">
+    <h2 class="text-3xl font-bold mb-4 text-blue-700">Phase 1: Reverse Engineering & Menu System</h2>
+    <p class="text-lg mb-6 font-semibold text-blue-600">Weighting: 80%</p>
 
+    <h3 class="text-2xl font-bold mb-3 border-b border-gray-300 pb-2">Core Objective</h3>
+    <p class="mb-4 text-gray-700">
+      You must observe the behavior of the original program and <strong>reproduce the output exactly</strong> under all conditions,
+      including spacing, punctuation, and capitalization.
+    </p>
 
-            <!-- PAGE 2: PHASE 1 - REVERSE ENGINEERING --><div id="page-phase1" class="page">
-                <div class="section-box">
-                    <h2 class="text-3xl font-bold mb-4 text-blue-700">Phase 1: Reverse Engineering & Menu System</h2>
-                    <p class="text-lg mb-6 font-semibold text-blue-600">Weighting: 80%</p>
+    <!-- Type of Program section -->
+    <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Type of Program</h4>
+    <p class="mb-4 text-gray-700">
+      The program you will receive is a <strong>menu program that runs in a terminal</strong>.  
+      You have already worked with terminal sessions, where interaction occurs entirely through the <strong>keyboard</strong> rather than the mouse.  
+      In this program, the terminal displays a numbered list of options, and the user selects one by typing the number and pressing <kbd>Enter</kbd>.  
+      For a detailed explanation of terminal-based menu programs, visit  
+      <a href="./terminalMenu.html" class="text-blue-700 underline hover:text-blue-900">Terminal Menu Overview</a>.
+    </p>
 
-                    <h3 class="text-2xl font-bold mb-3 border-b border-gray-300 pb-2">Core Objective</h3>
-                    <p class="mb-4 text-gray-700">You will be given a Python menu based program that you will be able to run but not read. You must run the program and observe the behavior of the original program and <strong>reproduce the output exactly</strong> under all conditions, including spacing, punctuation, and capitalization.</p>
+    <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Implementation Steps</h4>
+    <ol class="list-decimal list-inside space-y-4 ml-4 mb-8 text-gray-700">
+      <li>
+        <strong>Menu Options 1 – 4:</strong><br>
+        For these four options on the menu, you <strong>do not need to create a menu program</strong>.  
+        Instead, create a separate Python file that produces the exact output required, including the  
+        “<strong>Start of Output</strong>” and “<strong>End of Output</strong>” markers.
+        <br><br>
+        <p class="text-gray-700">
+          <strong>Example:</strong>  
+          Option 1 on the menu, when run, should return the following output:
+        </p>
+        <div class="mt-3 mb-5 text-center">
+          <img src="images/helloworld.png" alt="Example output for Option 1 – Hello World"
+               class="mx-auto rounded-lg shadow-md border border-gray-200 max-w-md">
+        </div>
+        <p class="text-gray-700">
+          This means that your Python script should look very similar to the following example:
+        </p>
+        <div class="mt-3 mb-2 text-center">
+          <img src="images/hwprog.png" alt="Example Python code for Hello World program"
+               class="mx-auto rounded-lg shadow-md border border-gray-200 max-w-md">
+        </div>
+      </li>
 
-                    <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Implementation Steps</h4>
-                    <ol class="list-decimal list-inside space-y-2 ml-4 mb-8 text-gray-700">
-                        <li><strong>Standalone Programs (Options 1-4):</strong> Develop a separate Python file for each of the first four menu options. These programs must produce the output, including the "Start of Output" and "End of Output" markers.</li>
-                        <li><strong>Menu Integration:</strong> Once the first four standalone programs are marked as complete, integrate all required options (1 through X) into a single, comprehensive menu-based system.</li>
-                    </ol>
-                    
-                    <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Peer Marking Process (Critical)</h4>
-                    <div class="space-y-4">
-                        <div class="marker-rule">
-                            <p class="font-bold text-orange-800">Immediate Marking:</p>
-                            <p class="text-gray-700">You <strong>MUST</strong> have each menu option marked immediately upon completion. Do not "save up" your work for later.</p>
-                        </div>
-                        <div class="marker-rule">
-                            <p class="font-bold text-orange-800">Becoming a Marker:</p>
-                            <p class="text-gray-700">The first student to successfully complete an option, reviewed and approved by the teacher, earns the title of <strong>"Marker"</strong> for that specific question.</p>
-                        </div>
-                        <div class="marker-rule">
-                            <p class="font-bold text-orange-800">Marker Responsibility:</p>
-                            <p class="text-gray-700">Markers review other students' work by running both the model and the student's program simultaneously to confirm <strong>exact output matching</strong>.</p>
-                        </div>
-                    </div>
+      <li>
+        <strong>Menu Integration:</strong><br>
+        After all four standalone programs have been marked as complete, integrate them (and any additional options) into one comprehensive menu-based system. Note that you will need to include the previous 4 pieces of code into your menu.
+        Also note, it is VERY important that each option on the menu is contained in its own function. 
+      </li>
+    </ol>
+
+    <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Peer Marking Process (Critical)</h4>
+    <div class="space-y-4">
+      <div class="marker-rule">
+        <p class="font-bold text-orange-800">Immediate Marking:</p>
+        <p class="text-gray-700">
+          You <strong>MUST</strong> have each menu option marked immediately upon completion.  
+          Do not “save up” work for later marking.
+        </p>
+      </div>
+      <div class="marker-rule">
+        <p class="font-bold text-orange-800">Becoming a Marker:</p>
+        <p class="text-gray-700">
+          The first student to successfully complete an option—reviewed and approved by the teacher—becomes the
+          <strong>Marker</strong> for that question.
+        </p>
+      </div>
+      <div class="marker-rule">
+        <p class="font-bold text-orange-800">Marker Responsibility:</p>
+        <p class="text-gray-700">
+          Markers verify other students’ work by running both the model and the student’s program simultaneously
+          to confirm <strong>exact output matching</strong>.
+        </p>
+      </div>
+    </div>
+  </div>
                 </div>
-            </div>
 
             <!-- PAGE 3: PHASE 2 - ENCRYPT/DECRYPT --><div id="page-phase2" class="page">
                 <div class="section-box">
