@@ -70,6 +70,7 @@
                 <a href="#" onclick="showPage('page-submit')" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">How to Submit</a>
                 <a href="./goodCodingTips.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Good Coding Tips</a>
                 <a href="./peerMarking.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Peer Marking</a>
+                <a href="./top1000words.html" class="block px-4 py-2 hover:bg-gray-100 text-gray-800">Top 1000 Words</a>
               </div>
             </div>
           </div>
@@ -221,66 +222,74 @@
                 </li>
                 </ol>
 
-                <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Peer Marking Process (Critical)</h4>
-                <div class="space-y-4">
-                <div class="marker-rule">
-                    <p class="font-bold text-orange-800">Immediate Marking:</p>
-                    <p>You <strong>MUST</strong> have each menu option marked immediately upon completion; do not “save up” work for later.</p>
-                </div>
-                <div class="marker-rule">
-                    <p class="font-bold text-orange-800">Becoming a Marker:</p>
-                    <p>The first student to complete an option — reviewed and approved by the teacher — becomes the <strong>Marker</strong> for that question.</p>
-                </div>
-                <div class="marker-rule">
-                    <p class="font-bold text-orange-800">Marker Responsibility:</p>
-                    <p>Markers verify other students’ work by running both the model and student programs simultaneously to confirm <strong>exact output matching</strong>.</p>
-                </div>
-                </div>
+                <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Peer Marking (Quick Overview)</h4>
+                <p class="mb-4 text-gray-700">
+                    For each Phase 1 option, get a classmate to check your output against the model as soon as you finish; once you're marked competent, you can help mark others the same way.
+                </p>
+                <p class="text-gray-700">
+                    Full details and rules are on the <a href="./peerMarking.html" class="text-blue-700 underline hover:text-blue-900">Peer Marking guide</a>.
+                </p>
             </div>
             </div>
-
 
       <!-- PAGE 3: PHASE 2 - ENCRYPT / DECRYPT -->
       <div id="page-phase2" class="page">
         <div class="section-box">
-          <h2 class="text-3xl font-bold mb-4 text-blue-700">Phase 2: Encrypt / Decrypt (Caesar Cipher)</h2>
+          <h2 class="text-3xl font-bold mb-4 text-blue-700">Phase 2 — Program Requirements</h2>
           <p class="text-lg mb-6 font-semibold text-green-600">Weighting: 15%</p>
 
-          <p class="mb-4 text-gray-700">You will implement a robust Caesar Cipher for text file processing.</p>
+          <p class="mb-6 text-gray-700">
+            You will develop four Python programs for Phase 2. Each program must use the specified filename format where <strong>[StudentNumber]</strong> is replaced with your student number.
+          </p>
 
-          <h4 class="text-xl font-semibold mt-6 mb-3 text-gray-800">Required Files and Tasks (4 Total)</h4>
-          <div class="overflow-x-auto">
-            <table class="min-w-full divide-y divide-gray-300 rounded-lg overflow-hidden border">
-              <thead class="bg-gray-100">
-                <tr>
-                  <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-700">Task</th>
-                  <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-700">File Name</th>
-                  <th class="px-6 py-3 text-left text-xs font-bold uppercase tracking-wider text-gray-700">Functionality</th>
-                </tr>
-              </thead>
-              <tbody class="bg-white divide-y divide-gray-200">
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap font-medium text-green-600">Encrypt</td>
-                  <td class="px-6 py-4 whitespace-nowrap">[StudentNumber]-encrypt.py</td>
-                  <td class="px-6 py-4 text-sm text-gray-700">Read input file, prompt for offset, write encrypted content to output file.</td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap font-medium text-green-600">Decrypt</td>
-                  <td class="px-6 py-4 whitespace-nowrap">[StudentNumber]-decrypt.py</td>
-                  <td class="px-6 py-4 text-sm text-gray-700">Read encrypted file, prompt for offset, decrypt content, write to output file.</td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap font-medium text-yellow-600">Known Word Attack</td>
-                  <td class="px-6 py-4 whitespace-nowrap">[StudentNumber]-knownValue.py</td>
-                  <td class="px-6 py-4 text-sm text-gray-700">Deduce the key using a known word in the encrypted text; output success/failure message.</td>
-                </tr>
-                <tr class="hover:bg-gray-50">
-                  <td class="px-6 py-4 whitespace-nowrap font-medium text-red-600">Brute Force Hack</td>
-                  <td class="px-6 py-4 whitespace-nowrap">[StudentNumber]-dictionaryValue.py</td>
-                  <td class="px-6 py-4 text-sm text-gray-700">Test all 25 offsets against a dictionary file to find the key; output success/failure message.</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="space-y-8">
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Encrypt — [StudentNumber]-encrypt.py</h4>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                <li>Prompt the user for an input file name, output filename and an integer offset (the key).</li>
+                <li>read in the input file and apply the offset as the cypher key</li>
+                <li>Write the encrypted content to the output file.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Decrypt — [StudentNumber]-decrypt.py</h4>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                <li>Read an encrypted input file.</li>
+                <li>Prompt the user for an output filename and the integer offset (the key).</li>
+                <li>Decrypt the content and write the decrypted message to the output file.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Known-Word Attack — [StudentNumber]-knownValue.py</h4>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                <li>Simulate an intercepted encrypted message where one plaintext word is known.</li>
+                <li>Prompt the user for the encrypted filename and the desired decrypted output filename.</li>
+                <li>Use the known word to deduce the key, decrypt the message, and write the result to the output file.</li>
+                <li>Print a clear success message if decryption succeeds or an informative failure message if it does not.</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-gray-800">Brute-Force (Dictionary) Attack — [StudentNumber]-dictionaryValue.py</h4>
+              <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+                <li>Simulate an intercepted encrypted message when no plaintext words are known.</li>
+                <li>Prompt the user for: encrypted filename, decrypted output filename, and dictionary filename.</li>
+                <li>Attempt all 25 possible offsets, testing each decryption against words from the supplied dictionary (use the <a href="./top1000words.html" class="text-blue-700 underline underline-offset-4 font-semibold hover:text-blue-900">Top 1000 Words</a> page).</li>
+                <li>To reduce false positives, ignore dictionary words shorter than 3 characters.</li>
+                <li>If a correct key is found, write the decrypted message to the output file and print a success message; otherwise print a failure message.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-10 border-t border-gray-200 pt-6">
+            <h4 class="text-xl font-semibold text-gray-800">General requirements (all programs)</h4>
+            <ul class="list-disc list-inside text-gray-700 space-y-2 ml-4">
+              <li>Use the exact filename formats supplied.</li>
+              <li>Include input prompts as specified above.</li>
+              <li>Provide clear user messages for both success and failure cases.</li>
+            </ul>
           </div>
         </div>
       </div>
